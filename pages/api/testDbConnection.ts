@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb';
 
 export default async function handler(req, res) {
-  const uri = process.env.MDATABASE_URL; // Remplacez par votre variable d'environnement contenant la chaîne de connexion
+  const uri = process.env.DATABASE_URL; // Remplacez par votre variable d'environnement contenant la chaîne de connexion
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
   try {
