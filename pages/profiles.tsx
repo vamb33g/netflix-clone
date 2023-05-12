@@ -25,7 +25,7 @@ export async function getServerSideProps(context: NextPageContext) {
         destination: '/auth',
         permanent: false,
       }
-    } 
+    }
   }
 
   return {
